@@ -1,10 +1,9 @@
-i = 1
+numbers = [4, 7, 2, 9, 5]
 
-while True:
-    print(f"Сейчас i = {i}")
+maximum = numbers[0]
 
-    if i == 5:
-        print("Выходим из цикла")
-        break
+for number in numbers:
+    if number > maximum:
+        maximum = number
 
-    i += 1
+print("Максимум =", maximum)
